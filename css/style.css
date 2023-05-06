@@ -1,10 +1,12 @@
 *{
   margin: 0;
   padding: 0;
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
 }
 
-/* ===HTML BACKGROUND=== */
+/*====================================================*/
+/*====================================================*/
+
 html{
   background-color: #F0F8FF;
 }
@@ -14,73 +16,30 @@ html{
 .container{
   display: flex;
   justify-content: center;
+  margin-top: 150px;
 }
 
 .card{
   border-radius: 15px;
   box-shadow: 3px 3px 5px 3px #888888;
-  display: flex;
-  margin-top: -5px; /*teste*/
-  width: /*100%;*/ 136vh;
-  height: /*-450px;*/ 56vh;
+  display: block;
+  margin-top: 40px;
+  width: 118vh;
+  height: 58vh;
   background-image: linear-gradient(45deg, #000000, #363636, #696969, #000000);
   background-size: 500% 110%;
   animation: degrade-animado 3s infinite alternate;
 }
 
-h1{
-  align-items: center;
-  margin-left: 50px;
-}
-
-h6{
-  align-items: center;
-  margin-top: 40px;
-  margin-left: 55px;
-}
-
-.line1{
-  width: 843px;
-  height: 1px;
-  background-color: #DAA520;
-  margin-left: 261px;
-  margin-top: 150px;
-  position: relative;
-}
-
-.line2{
-  width: 589px;
-  height: 1px;
-  background-color: #DAA520;
-  margin-left: 261px;
-  margin-top: 10px;
-  position: absolute;
-}
-
-.card .line3{
-  width: 540px;
-  height: 1px;
-  background-color: #DAA520;
-  margin-left: ;
-  margin-top: 11px;
-  position: absolute;
-}
-
-.card .line4{
-  width: 841px;
-  height: 1px;
-  background-color: #DAA520;
-  margin-left: 5px;
-  margin-top: 17px;
-  position: absolute;
-}
-
 .lyrics h1{
+  align-items: center;
   color: #DAA520;
   font-weight: 500;
   font-size: 60px;
   font-family: 'Quicksand', serif;
-  margin-top: 75px;
+  margin: 10px;
+  margin-top: 54px;
+  padding: 3px;
   text-shadow: #A9A9A9 2px 3px 3px;
   text-align: center;
 }
@@ -90,17 +49,12 @@ h6{
   font-weight: 500;
   font-size: 20px;
   font-family: 'Quicksand', serif;
+  padding: 10px;
   text-shadow: #A9A9A9 2px 3px 3px;
   text-align: center;
 }
 
-.site{
-  margin-left: -50px;
-  margin-top: -42px;
-  text-align: -90px;
-}
-
-
+/*KEYFRAME*/
 @keyframes degrade-animado{
   0%{
     background-position: 0%;
@@ -108,4 +62,184 @@ h6{
   100%{
     background-position: 100%;
   }
+}
+
+/* TESTE MEDIA QUERY */
+@media all and (orientation: landscape){
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html{
+    background-color: #F0F8FF;
+  }
+}
+
+/*==============================================*/
+@media (min-width: 320px){
+
+  .container{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  .card{
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 3px #888888;
+    display: block;
+    width: 20em;
+    height: 61.5vh;
+    background-image: linear-gradient(45deg, #000000, #363636, #696969, #000000);
+    background-size: 500% 110%;
+    animation: degrade-animado 3s infinite alternate;
+  }
+
+  .lyrics h1{
+    align-items: center;
+    color: #DAA520;
+    font-weight: 500;
+    font-size: 60px;
+    font-family: 'Quicksand', serif;
+    margin: 1em;
+    margin-top: 0.5em;
+    padding: 1px;
+    text-shadow: #A9A9A9 2px 3px 3px;
+    text-align: center;
+  }
+
+  .lyrics h6{
+    color: #DAA520;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: 'Quicksand', serif;
+    margin-top: 0.5em;
+    padding: 5px;
+    text-shadow: #A9A9A9 2px 3px 3px;
+    text-align: center;
+  }
+
+  .line1{
+    background: #FFD700;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-top: -355px;
+    width: 310px;
+    height: 2px;
+  }
+
+  .line2{
+    background: #FFD700;
+    border-radius: 10px;
+    margin-left: 167px;
+    margin-top: 2px;
+    width: 150px;
+    height: 2px;
+  }
+
+    .line3{
+    background: #FFD700;
+    border-radius: 10px;
+    margin-left: 2px;
+    margin-top: 383px;
+    width: 150px;
+    height: 2px;
+    /*z-index: 0;*/
+  }
+
+    .line4{
+    background: #FFD700;
+    border-radius: 10px;
+    margin-left: 2px;
+    margin-top: 4px;
+    width: 315px;
+    height: 2px;
+    /*z-index: 1;*/
+  }
+
+}
+/*==============================================*/
+@media screen and (min-width: 495px) and (min-width: 700px){
+  .container{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  .card{
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 3px #888888;
+    display: block;
+    margin-top: 40px;
+    width: 700px;
+    height: 62vh;
+    background-image: linear-gradient(45deg, #000000, #363636, #696969, #000000);
+    background-size: 500% 110%;
+    animation: degrade-animado 3s infinite alternate;
+  }
+
+  .lyrics h1{
+    align-items: center;
+    color: #DAA520;
+    font-weight: 500;
+    font-size: 70px;
+    font-family: 'Quicksand', serif;
+    margin: 0.5em;
+    margin-top: 35px;
+    padding: 1px;
+    text-shadow: #A9A9A9 2px 3px 3px;
+    text-align: center;
+  }
+
+  .lyrics h6{
+    color: #DAA520;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Quicksand', serif;
+    margin-top: 2px;
+    padding: 5px;
+    text-shadow: #A9A9A9 2px 3px 3px;
+    text-align: center;
+  }
+
+  .line1{
+    background: #FFD700;
+    border-radius: 10px;
+    margin-left: 2px;
+    margin-top: -330px;
+    width: 697px;
+    height: 2px;
+  }
+
+  .line2{
+    background: #FFD700;
+    border-radius: 10px;
+    margin-left: 350px;
+    margin-top: 2px;
+    width: 350px;
+    height: 2px;
+}
+
+  .line3{
+    background: #FFD700;
+    border-radius: 10px;
+    margin-left: 2px;
+    margin-top: 382px;
+    width: 350px;
+    height: 2px;
+    z-index: 0;
+  }
+
+  .line4{
+    background: #FFD700;
+    border-radius: 10px;
+    margin-left: 2px;
+    margin-top: 0.8px;
+    width: 697px;
+    height: 2px;
+    z-index: 1;
+  }
+
 }
