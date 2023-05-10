@@ -1,55 +1,78 @@
+@charset "UTF-8";
+
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /*====================================================*/
 /*====================================================*/
-
 html{
   background-color: #F0F8FF;
 }
 
-
-/* ===CENTRALIZING THE CONTAINER=== */
+/*====================================================*/
+/* =============CENTRALIZING THE CONTAINER============ */
 .container{
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 50.2px;
 }
 
 .card{
+  align-items: center;
   border-radius: 15px;
-  box-shadow: 3px 3px 5px 3px #888888;
+  box-shadow: 2px 3px 5px 5px #888888;
   display: block;
-  margin-top: 40px;
-  width: 118vh;
-  height: 58vh;
+  margin-left: -4em;
+  margin-top: 10vh;
+  min-width: 50%;
+  height: 66vh;
   background-image: linear-gradient(45deg, #000000, #363636, #696969, #000000);
   background-size: 500% 110%;
   animation: degrade-animado 3s infinite alternate;
 }
 
-.lyrics h1{
-  align-items: center;
+.lyrics{
+  display: block;
+  width: 100%;
+  height: 100%
+}
+
+h1{
   color: #DAA520;
   font-weight: 500;
-  font-size: 60px;
+  font-size: 12vh;
   font-family: 'Quicksand', serif;
-  margin: 10px;
-  margin-top: 54px;
-  padding: 3px;
+  margin-top: 50px;
+  text-shadow: #A9A9A9 1px 3px 2px;
+  text-align: center;
+}
+
+h5{
+  color: #DAA520;
+  font-weight: 500;
+  font-size: 2.8vh;
+  font-family: 'Quicksand', serif;
+  margin-left: -1vh;
+  margin-top: 15px;
+  min-width: 30vw;
+  max-width: 50vw;
+  padding: 1px;
   text-shadow: #A9A9A9 2px 3px 3px;
   text-align: center;
 }
 
-.lyrics h6{
+h6{
   color: #DAA520;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 3.5vh;
   font-family: 'Quicksand', serif;
-  padding: 10px;
+  margin-left: -1vh;
+  margin-top: 16px;
+  min-width: 30vw;
+  max-width: 50vw;
+  padding: 1px;
   text-shadow: #A9A9A9 2px 3px 3px;
   text-align: center;
 }
@@ -64,182 +87,112 @@ html{
   }
 }
 
-/* TESTE MEDIA QUERY */
-@media all and (orientation: landscape){
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  html{
-    background-color: #F0F8FF;
-  }
-}
-
 /*==============================================*/
-@media (min-width: 320px){
+/*==============================================*/
+@media (max-width: 321px) and (max-width: 1366px){
 
   .container{
     display: flex;
     justify-content: center;
-    margin-top: 80px;
   }
 
   .card{
-    border-radius: 15px;
-    box-shadow: 3px 3px 5px 3px #888888;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 3px 1px 8px 1px #888888;
     display: block;
-    width: 20em;
-    height: 61.5vh;
-    background-image: linear-gradient(45deg, #000000, #363636, #696969, #000000);
-    background-size: 500% 110%;
-    animation: degrade-animado 3s infinite alternate;
+    margin-left: 1px;
+    margin-top: -40px;
+    width: 95%;
+    height: 98%;
   }
 
-  .lyrics h1{
-    align-items: center;
+  .lyrics{
+    text-align: center;
+    display: block;
+    margin-top: 70px;
+    width: 90%;
+    height: 84vh;
+  }
+
+  h1{
+    color: #DAA520;
+    display: flex;
+    font-weight: 500;
+    font-size: 12vh;
+    font-family: 'Quicksand', serif;
+    margin-left: 7vw;
+    margin-top: 20vw;
+    text-align: center;
+  }
+
+  h5{
+    display: inline-block;
     color: #DAA520;
     font-weight: 500;
-    font-size: 60px;
+    font-size: 4.2vw;
     font-family: 'Quicksand', serif;
-    margin: 1em;
-    margin-top: 0.5em;
+    margin-left: 4vh;
+    margin-top: 15px;
+    min-width: 30vw;
+    max-width: 50vw;
+    padding: 2px;
+    text-shadow: #A9A9A9 2px 3px 3px;
+    text-align: center;
+  }
+
+  span{
+    display: inline-block;
+    align-items: center;
+    font-size: 4.5vw;
+    margin-left: -15vw;
+  }
+
+  h6{
+    display: inline-block;
+    color: #DAA520;
+    font-weight: 500;
+    font-size: 5.8vw;
+    font-family: 'Quicksand', serif;
+    margin-left: 1.9vh;
+    margin-top: 45px;
     padding: 1px;
     text-shadow: #A9A9A9 2px 3px 3px;
     text-align: center;
   }
 
-  .lyrics h6{
-    color: #DAA520;
-    font-weight: 500;
-    font-size: 17px;
-    font-family: 'Quicksand', serif;
-    margin-top: 0.5em;
-    padding: 5px;
-    text-shadow: #A9A9A9 2px 3px 3px;
-    text-align: center;
+}
+
+/*==============================================*/
+/*==============================================*/
+@media (min-heigth: 550px) {
+
+  .container{
+    display: flex;
+    justify-content: center;
   }
 
-  .line1{
-    background: #FFD700;
-    border-radius: 10px;
+  .card{
+    border-radius: 5px;
+    box-shadow: 3px 1px 8px 1px #888888;
+    display: block;
     margin-left: 5px;
-    margin-top: -355px;
-    width: 310px;
-    height: 2px;
-  }
-
-  .line2{
-    background: #FFD700;
-    border-radius: 10px;
-    margin-left: 167px;
-    margin-top: 2px;
-    width: 150px;
-    height: 2px;
-  }
-
-    .line3{
-    background: #FFD700;
-    border-radius: 10px;
-    margin-left: 2px;
-    margin-top: 383px;
-    width: 150px;
-    height: 2px;
-    /*z-index: 0;*/
-  }
-
-    .line4{
-    background: #FFD700;
-    border-radius: 10px;
-    margin-left: 2px;
-    margin-top: 4px;
-    width: 315px;
-    height: 2px;
-    /*z-index: 1;*/
-  }
-
-}
-/*==============================================*/
-@media screen and (min-width: 495px) and (min-width: 700px){
-  .container{
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-  }
-
-  .card{
-    border-radius: 15px;
-    box-shadow: 3px 3px 5px 3px #888888;
-    display: block;
-    margin-top: 40px;
-    width: 700px;
-    height: 62vh;
-    background-image: linear-gradient(45deg, #000000, #363636, #696969, #000000);
-    background-size: 500% 110%;
-    animation: degrade-animado 3s infinite alternate;
+    margin-top: -20vh;
+    width: 80%;
+    height: 100% auto;
   }
 
   .lyrics h1{
     align-items: center;
     color: #DAA520;
+    display: block;
     font-weight: 500;
-    font-size: 70px;
+    font-size: 12vh;
     font-family: 'Quicksand', serif;
-    margin: 0.5em;
-    margin-top: 35px;
+    margin-left: 1px;
+    margin-top: 0.7em;
     padding: 1px;
-    text-shadow: #A9A9A9 2px 3px 3px;
     text-align: center;
-  }
-
-  .lyrics h6{
-    color: #DAA520;
-    font-weight: 500;
-    font-size: 20px;
-    font-family: 'Quicksand', serif;
-    margin-top: 2px;
-    padding: 5px;
-    text-shadow: #A9A9A9 2px 3px 3px;
-    text-align: center;
-  }
-
-  .line1{
-    background: #FFD700;
-    border-radius: 10px;
-    margin-left: 2px;
-    margin-top: -330px;
-    width: 697px;
-    height: 2px;
-  }
-
-  .line2{
-    background: #FFD700;
-    border-radius: 10px;
-    margin-left: 350px;
-    margin-top: 2px;
-    width: 350px;
-    height: 2px;
-}
-
-  .line3{
-    background: #FFD700;
-    border-radius: 10px;
-    margin-left: 2px;
-    margin-top: 382px;
-    width: 350px;
-    height: 2px;
-    z-index: 0;
-  }
-
-  .line4{
-    background: #FFD700;
-    border-radius: 10px;
-    margin-left: 2px;
-    margin-top: 0.8px;
-    width: 697px;
-    height: 2px;
-    z-index: 1;
   }
 
 }
