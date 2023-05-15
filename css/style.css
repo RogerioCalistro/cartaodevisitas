@@ -98,18 +98,18 @@ body{
 
 /* ====== MEDIA QUERY ======*/
 /*=========================*/
-@media screen and (max-width: 350px) and (max-width: 1024px) {
+@media screen and (min-width: 300px) and (max-width: 800px){
   .container{
-    width: 650px;
-    padding: 20px;
+    width: 1150px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
   }
   .container .card{
-    width: 92vw;
-    max-height: 150%;
+    width: 95vw;
+    max-height: 155vh;
     position: absolute;
   }
 
