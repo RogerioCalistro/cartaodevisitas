@@ -109,7 +109,7 @@ body{
   }
   .container .card{
     width: 95vw;
-    max-height: 155vh;
+    max-height: 155vw;
     position: absolute;
   }
 
@@ -129,18 +129,18 @@ body{
   .container .card h5{
     align-items: center;
     font-size: 1.1rem;
-    margin-left: 40px;
+    margin-left: 65px;
     text-align: center;
   }
 
   .container .card span{
     font-size: 1rem;
-    margin: -55px;
+    margin: -65px;
   }
   .container .card h6{
     align-items: center;
     font-size: 1.1rem;
-    margin-left: 40px;
+    margin-left: 64px;
     text-align: center;
   }
 }
