@@ -68,6 +68,13 @@ body{
   text-align: center;
 }
 
+.container .card a{
+  color: #DAA520;
+  font-family: 'Quicksand', serif;
+  text-decoration: none;
+  text-shadow: #A9A9A9 2px 3px 3px;
+}
+
 .container .card h6{
   color: #DAA520;
   font-weight: 500;
@@ -80,10 +87,6 @@ body{
   padding: 2px;
   text-shadow: #A9A9A9 2px 3px 3px;
   text-align: center;
-}
-
-.container .card a {
-  color: #DAA520;
 }
 
 /*KEYFRAME*/
@@ -138,6 +141,14 @@ body{
     font-size: 1rem;
     margin: -65px;
   }
+
+  .container .card a{
+  color: #DAA520;
+  font-family: 'Quicksand', serif;
+  text-decoration: none;
+  text-shadow: #A9A9A9 2px 3px 3px;
+}
+  
   .container .card h6{
     align-items: center;
     font-size: 1.1rem;
