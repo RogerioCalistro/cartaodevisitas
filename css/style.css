@@ -43,8 +43,6 @@ body{
   padding: 20px;
   text-align: center;
   display: block;
-  /*width: 100%;
-  height: 100%*/
 }
 
 .container .card h1{
@@ -52,7 +50,6 @@ body{
   font-weight: 500;
   font-size: 5rem;
   font-family: 'Quicksand', serif;
-  /*margin-top: 50px;*/
   text-shadow: #A9A9A9 1px 3px 2px;
   text-align: center;
 }
@@ -83,6 +80,10 @@ body{
   padding: 2px;
   text-shadow: #A9A9A9 2px 3px 3px;
   text-align: center;
+}
+
+.container .card a {
+  color: #DAA520;
 }
 
 /*KEYFRAME*/
